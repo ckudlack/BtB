@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8.rc2'
+gem 'rails'
 gem 'bootstrap-sass', '2.0.4.0'
 gem 'bcrypt-ruby', '3.0.1'
 # Bundle edge Rails instead:
@@ -23,7 +23,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 end
 
-gem 'jquery-rails','2.0.0'
+gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
