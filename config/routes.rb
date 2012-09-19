@@ -2,13 +2,12 @@ BtB::Application.routes.draw do
 
   root :to => "pages#home"
 
-  #get "pages/home"
+  match '/music', to: 'pages#music'
+  
+  match '/build', to: 'pages#build'
+  
+  match '/about', to: 'pages#about'
 
-  get "pages/build"
-
-  get "pages/music"
-
-  get "pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
