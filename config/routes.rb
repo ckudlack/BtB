@@ -1,5 +1,11 @@
 BtB::Application.routes.draw do
 
+  get "posts/new"
+
+  get "posts/:id" => "posts#show"
+
+  post "posts" => "posts#create"
+
   root :to => "pages#home"
 
   match '/music', to: 'pages#music'
@@ -7,7 +13,6 @@ BtB::Application.routes.draw do
   match '/build', to: 'pages#build'
   
   match '/about', to: 'pages#about'
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
