@@ -76,8 +76,20 @@ p {
   }
 }
 
+/* Title Format */
 
-  
+  #cus_title{
+
+    float: center;
+    font-size: 1em;
+    color: #7568E9;
+    letter-spacing: -1px;
+    &:hover{
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+  }
 
 /* footer */
 
