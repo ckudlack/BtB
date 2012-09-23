@@ -15,7 +15,9 @@ html
 
 body
 {
-  padding-top: 60px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: $graymediumlight;
 }
 
 section {
@@ -38,10 +40,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  margin-top: 0px;
   text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 480px;
+  vertical-align: top;
 }
 
 h2 {
@@ -50,12 +58,31 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: #FFFFFF;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.navbar-inner
+ {
+background-color: #FFFFFF;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.custom{
+  height:20px;
+}
+
+.myunit{
+padding-bottom: 100px;
+padding-top: 100px;
+background-image: url(AW_mirr_08.png);
+margin-bottom: 0px;
+text-align: top;
 }
 
 /* header */
@@ -79,13 +106,15 @@ p {
 /* Title Format */
 
   #cus_title{
-
-    float: center;
+    font: Helvetica, Arial, sans-serif;
+    font-style: 900px;
     font-size: 1em;
-    color: #7568E9;
+    /*text-transform: uppercase;*/
+    vertical-align: top;
+    color: #FFFFFF;
     letter-spacing: -1px;
     &:hover{
-      color: #ffffff;
+      color: #FFFFFF;
       text-decoration: none;
     }
 
