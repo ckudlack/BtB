@@ -47,7 +47,7 @@ h1 {
   margin-top: 0px;
   text-align: center;
   position: relative;
-  top: -60px;
+  top: -80px;
   vertical-align: top;
 }
 
@@ -58,7 +58,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   position: relative;
-  top: -50px;
+  top: -70px;
   color: #FFFFFF;
 }
 
@@ -86,7 +86,17 @@ margin-bottom: 5px;
 text-align: top;
 }
 
+.cus_about{
+  background-color: $grayLight;
+}
 /* header */
+.smalltab{
+  margin-left: 20px;
+}
+
+.tab{
+  margin-left: 50px;
+}
 
 #logo {
   float: left;
