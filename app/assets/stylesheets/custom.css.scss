@@ -67,6 +67,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  text-indent:30px;
 }
 
 .navbar-inner
@@ -91,7 +92,11 @@ text-align: top;
 }
 /* header */
 .smalltab{
-  margin-left: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 10px;
+  font-family: Rockwell;
+  font-size: 16px; 
 }
 
 .tab{
@@ -100,7 +105,7 @@ text-align: top;
 
 #sbar{
   position:absolute;
-  left:1025px;
+  left:1075px;
   background-color:#000000
 }
 
@@ -145,6 +150,22 @@ position:absolute;
     }
 
   }
+
+#cus_title2{
+    font: Helvetica, Arial, sans-serif;
+    font-style: 900px;
+    font-size: 24px;
+    /*text-transform: uppercase;*/
+    vertical-align: top;
+    color: #000000;
+    letter-spacing: -1px;
+    &:hover{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  }
+/*Home*/
+
 
 /* footer */
 

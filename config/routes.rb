@@ -14,6 +14,8 @@ BtB::Application.routes.draw do
   
   match '/about', to: 'pages#about'
 
+  match '/rigs', to: 'pages#artists-that-take-their-stage-with-them'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
