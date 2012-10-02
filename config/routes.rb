@@ -14,7 +14,7 @@ BtB::Application.routes.draw do
   
   match '/about', to: 'pages#about'
 
-  match '/rigs', to: 'pages#artists-that-take-their-stage-with-them'
+  match '/news/artists-that-take-their-stage-with-them', to: 'pages#artists-that-take-their-stage-with-them'
 
   match '/news', to: 'pages#news'
 

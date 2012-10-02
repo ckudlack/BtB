@@ -77,8 +77,6 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-
-
 .myunit{
 padding-bottom: 100px;
 padding-top: 100px;
@@ -92,8 +90,8 @@ text-align: top;
 }
 /* header */
 .smalltab{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
   padding-bottom: 10px;
   font-family: Rockwell;
   font-size: 16px; 
@@ -107,8 +105,8 @@ text-align: top;
 }
 
 #sbar{
-  position:absolute;
-  left:1075px;
+  /*position:absolute;
+  left:1000px;*/
   background-color:#000000
 }
 
@@ -117,8 +115,9 @@ position:absolute;
 }
 
 #middlecolumn{
-  position:relative;
+  /*position:relative;
   left:100px;
+  padding-left: 50px;*/
 }
 
 #logo {
@@ -208,7 +207,7 @@ footer {
 
 /* Sidebar */
 
-aside {
+/*aside {
   section{
     padding: 10px 0;
     border-top: 1px solid $grayLighter;
@@ -228,7 +227,7 @@ aside {
       margin-bottom: 3px;
     }
   }
-}
+}*/
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
