@@ -18,6 +18,8 @@ BtB::Application.routes.draw do
 
   match '/news', to: 'pages#news'
 
+  match '/news/a-new-take-on-old-tech', to: 'pages#post2'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

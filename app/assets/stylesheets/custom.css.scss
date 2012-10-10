@@ -30,11 +30,26 @@ textarea {
   resize: vertical;
 }
 
+li{
+  margin-left: 60px;
+  font-size: 14px;
+  font-family: Rockwell;
+  padding-bottom: 5px;
+}
+
 .center {
   text-align: center;
   h1 {
   margin-bottom: 10px;
   }
+}
+
+#tbar{
+  font-size: 14px;
+  font-family: Rockwell;
+  margin-left: 0px;
+  padding-left:15px;
+  padding-right:15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
