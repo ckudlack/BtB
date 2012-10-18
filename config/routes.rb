@@ -1,10 +1,8 @@
 BtB::Application.routes.draw do
 
-  get "posts/new"
-
-  get "posts/:id" => "posts#show"
-
-  post "posts" => "posts#create"
+  resources :posts do
+    resources :comments
+  end
 
   root :to => "pages#home"
 

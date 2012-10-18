@@ -22,6 +22,11 @@ body
   height:100%;
 }
 
+td{
+padding-right: 20px;
+
+}
+
 section {
   overflow: auto;
 }
@@ -68,22 +73,14 @@ h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
-  margin-top: 0px;
   text-align: center;
-  position: relative;
-  top: -80px;
-  vertical-align: top;
 }
 
 h2 {
   font-size: 1.7em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  position: relative;
-  top: -70px;
   color: #FFFFFF;
 }
 
