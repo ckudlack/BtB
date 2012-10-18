@@ -1,14 +1,22 @@
-<h2>Add a comment:</h2>
-<%= form_for([@post, @post.comments.build]) do |f| %>
-  <div class="field">
-    <%= f.label :commenter %><br />
-    <%= f.text_field :commenter, :size => "10x1" %>
-  </div>
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body, :size => "30x5" %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<ul class="thumbnails">
+  <li class="span10">
+    <div class="thumbnail cus_about">
+
+      <h2>Add a comment:</h2>
+      <%= form_for([@post, @post.comments.build]) do |f| %>
+      <div class="field">
+        <%= f.label :commenter %><br />
+        <%= f.text_field :commenter, :size => "10x1" %>
+      </div>
+      <div class="field">
+        <%= f.label :body %><br />
+        <%= f.text_area :body, :size => "30x5" %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+      <% end %>
+      
+    </div>
+  </li>
+</ul>

@@ -1,17 +1,24 @@
-<h2>Comments</h2>
+<ul class="thumbnails">
+	<li class="span10">
+		<div class="thumbnail cus_about">
+			<h4>Comments</h4><br>
+			<% @post.comments.each do |comment| %>
+			<p>
+				<b>Commenter:</b>
+				<%= comment.commenter %>
+			</p>
 
-<p>
-	<b>Commenter:</b>
-	<%= comment.commenter %>
-</p>
+			<p>
+				<b>Comment:</b>
+				<%= comment.body %>
+			</p>
 
-<p>
-	<b>Comment:</b>
-	<%= comment.body %>
-</p>
-
-<p>
-	<%= link_to 'Destroy Comment', [comment.post, comment],
-	:confirm => 'Are you sure?',
-	:method => :delete %>
-</p>
+			<p>
+				<%= link_to 'Destroy Comment', [comment.post, comment],
+				:confirm => 'Are you sure?',
+				:method => :delete %>
+			</p>
+			<% end %>
+		</div>
+	</li>
+</ul>
