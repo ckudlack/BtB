@@ -1,25 +1,35 @@
-<h4>Listing posts</h4>
+<ul class="thumbnails">
+  <li class="span10">
+    <div class="thumbnail cus_about">
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+      <h4>Listing posts</h4>
 
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+      <table>
+        <tr>
+          <th>Title</th>
+          <!-- <th>Content</th> -->
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
 
-<br />
+        <% @posts.each do |post| %>
 
-<%= link_to 'New Post', new_post_path %>
+        <tr>
+          <br>
+          <td><%= post.title %></td>
+          <!-- <td><%= post.content %></td> -->
+          <td><%= link_to 'Show', post %></td>
+          <td><%= link_to 'Edit', edit_post_path(post) %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+      </table>
+
+      <br />
+
+      <%= link_to 'New Post', new_post_path %>
+
+    </div>
+  </li>
+</ul>
