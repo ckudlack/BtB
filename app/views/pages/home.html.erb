@@ -13,7 +13,9 @@
 			</div>
 		</li>
 	</ul>
-
+	
+<% @post=Post.find(1) %>
+<%= render @post.content.html_safe %>
 
 <ul class="thumbnails">
 	<li class="span10">
