@@ -1,163 +1,18 @@
-<ul class="thumbnails">
-	<li class="span10">
-		<div class="thumbnail cus_about">
-			<h4 style="float:right">Oct 15 2012</h4>
-			<h3 style="padding-left:40px;padding-top:20px;padding-bottom:5px"><%=link_to "Hidden Treasure", music_path, id: "cus_title2"%></h3>
-			<hr style="margin-left:40px;margin-right:80px">
-			<p class="smalltab">If you've looked carefully at the tracklisting for Boys Noize's <i>Out of the Black</i>, you might have noticed that one of the bonus tracks is missing. The track is called Yellow and features Siriusmo (the same guy who co-produced Conchord) and it's very good. I'm a big fan of Siriusmo, so it's cool to hear the two clearly different artist's styles working together so well. I can't believe they didn't put this in the US version! </p>
-			<p class="tab" style="text-align:center">
-				<iframe width="560" height="315" src="http://www.youtube.com/embed/MHzIZvHrxKo" frameborder="0" allowfullscreen></iframe></p>
-				<p class="smalltab">
-					---> Download <%=link_to "here", 'http://bit.ly/Ryu6aL' %> <---
-				</p>
-			</div>
-		</li>
-	</ul>
-	
+
 <% @post=Post.find(1) %>
-<%= render @post.content.html_safe %>
+<%= @post.content.html_safe %>
 
-<ul class="thumbnails">
-	<li class="span10">
-		<div class="thumbnail cus_about">
-			<h4 style="float:right">Oct 11 2012</h4>
-			<div class="row">
-				<div class="span2 columns" style="padding-left:50px;padding-top:20px">
-					<%= image_tag("boys-noize.jpg", alt: "Boys Noize") %>
-				</div>
-				<div class="span6 columns">
-					<h3 style="padding-top:120px;padding-bottom:10px">
-						<%= link_to	"Boys Noize - Out of the Black", music_path, id:"cus_title2" %>
-					</h3>
-					<hr style="margin-left:0px;margin-right:0px">
-				</div>
-			</div>
-			<br>
-			<p class="tab">
-				Boys Noize is so damn good at what he does, and Out of the Black proves it once again.  Because the parts vary so much, it’s difficult to describe the album as a whole (except for awesome), so here’s a recap of my favorite tunes:
-			</p>
+<% @post=Post.find(2) %>
+<%= @post.content.html_safe %>
 
-			<ul>
-				<li>‘Missile’ has a beat you can march to; it’ll get stuck in your head (in a good way)</li>
-				<li>‘Ich R U’ starts off rough but settles into a funky daft-punk breakdown reminiscent of the closing minute of ‘Aerodynamic’</li>
-				<li>‘Rocky 2’ is probably the most hardcore of the album. Very grinding and distorted.</li>
-				<li>‘Touch It’ is a funkier tune, also very daft-punk-y.</li>
-				<li>‘Reality’ sounds like it’s straight out of the new Tron movie, with creepy vocals lurking in the background.</li>
-				<li>‘Stop’ is one of those tracks that will be awesome to see live. The racecar buildup and metallic robo-noises that BN is known for makes it one of my favorites of the album</li>
-				<li>‘XTC’ is pure dance. Crank it up LOUD.</li>
-				<li>‘What You Want’ wasn’t one of my favorites at the beginning, but it has definitely grown on me. Very odd but catchy tune.</li>
-				<li>Not a huge fan of Snoop Dogg, but I loved ‘Got It’. The combination of Snoop’s rapping and BN’s beats make for an irresistible hit.</li>
-				<li>‘Conchord’ is another great dancehall tune; Berlin-based Siriusmo adds his quirky touch to this one.</li>
-			</ul>
+<% @post=Post.find(5) %>
+<%= @post.content.html_safe %>
 
-			<p class="tab" style="padding-top:10px">
-				Boys Noize will be touring the US in the next couple of months, and I would highly recommend going to see him if he’s in your area. The man knows how to put on a show – you’ll get your money’s worth and more. Plus, <i> he’s performing out of a giant skull</i>.
-			</p>
-			<br>
-			<p class="tab" style="padding-left:50px">
-				<iframe src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2452950%3Fsecret_token%3Ds-owrLs&amp;show_artwork=true&amp;secret_url=true" frameborder="no" height="450" scrolling="no" width="100%"></iframe>
-			</p>
-			<br>
-			<br>
-		</div>
-	</li>
-</ul>
+<% @post=Post.find(3) %>
+<%= @post.content.html_safe %>
 
-<ul class="thumbnails">
-	<li class="span10">
-		<div class="thumbnail cus_about">
-			<h4 style="float:right">Oct 10 2012</h4>
-			<div class="row">
-				<div class="span7 columns">
-					<h3 style="padding-top:40px;padding-bottom:10px;padding-left:70px">
-						<%= link_to	"A New Take On Old Tech", '/news/a-new-take-on-old-tech', id:"cus_title2" %>
-					</h3>
-				</div>
-				<div class="span2 columns" style="padding-top:20px">
-					<%= image_tag("reactable_logo.jpg", alt: "Reactable") %>
-				</div>		
-			</div>
-			<hr style="margin-left:50px;margin-right:50px">
-			<br><br>
-			<p class="smalltab">
-				Though it seems like new DJ equipment comes out almost every week, most of the controllers you see fit into the same mold: they all have knobs, faders, buttons, and maybe a jog wheel or two. It’s been a while since someone has created a completely original device for music creation... until this:
-			</p>
-			<p class="smalltab" style="text-align:center">
-				<iframe width="420" height="315" src="http://www.youtube.com/embed/Mgy1S8qymx0" frameborder="0" allowfullscreen></iframe>
-			</p>
-			<p class="smalltab" style="font-size:20px;font-style:bold">
-				<%= link_to	"Read More...", '/news/a-new-take-on-old-tech' %>
-			</p>
-		</div>
-	</li>
-</ul>
+<% @post=Post.find(6) %>
+<%= @post.content.html_safe %>
 
-<ul class="thumbnails">
-	<li class="span10">
-		<div class="thumbnail cus_about">
-			<h4 style="float:right">Oct 2 2012</h4>
-			<h3 style="padding-left:40px;padding-top:20px;padding-bottom:20px"><%=link_to "Music: Three Very Different Remixes", music_path, id: "cus_title2"%></h3><br>
-			<p class="smalltab" style="text-indent:0px">
-				A few tracks I want to share with you today:
-			</p>
-			<p class="smalltab">This remix of Peaches "Burst!" by Bart B More (my second favorite of the Boys Noize Records crew) is a great piece of acid-house. Nobody does remixes like the BNR boys:  </p>
-			<p class="tab">
-				<object height="81" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F60998475&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F60998475&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700" type="application/x-shockwave-flash" width="100%"></embed> </object>   <span><a href="http://soundcloud.com/boysnoizerecords/burst-bart-b-more-remix">Burst! (Bart B More Remix)</a> by <a href="http://soundcloud.com/boysnoizerecords">Boysnoize Records</a></span>
-			</p>
-			<p class="smalltab">
-				Here's a remix of A-Trak & Dillon Francis' "Money Makin'"-- I hadn't listened to much trap music before but this song's got me on a tear:
-			</p>
-			<p class="tab">
-				<object height="81" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F57087456&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F57087456&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700" type="application/x-shockwave-flash" width="100%"></embed> </object>   <span><a href="http://soundcloud.com/olivertwizt/a-trak-dillon-francis-money">A-TRAK, DILLON FRANCIS- MONEY MAKIN' (OLIVER TWIZT TRAP MIX)</a> by <a href="http://soundcloud.com/olivertwizt">Olivertwizt</a></span>
-			</p>
-			<p class="smalltab">
-				A little slower disco house track here, it's got a catchy beat that'll wedge itself inside your head. If you like this one, check out His Majesty Andre and Phantom's Revenge on Soundcloud -- you won't be disappointed:
-			</p>
-			<p class="tab">
-				<object height="81" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F57430159&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F57430159&amp;show_comments=true&amp;auto_play=false&amp;color=ff7700" type="application/x-shockwave-flash" width="100%"></embed> </object>   <span><a href="http://soundcloud.com/nervous-records/lazy-ants-the-phantoms-revenge">Lazy Ants & The Phantom's Revenge - Feeling (His Majesty Andre Remix)</a> by <a href="http://soundcloud.com/nervous-records">Nervous Inc.</a></span>
-			</p>
-			<br><br>
-		</div>
-	</li>
-</ul>
-
-<ul class="thumbnails">
-	<li class="span10">
-		<div class="thumbnail cus_about">
-			<h4 style="float:right">Sept 30 2012</h4>
-			<div class="row">
-				<div class="span2 columns" style="padding-left:50px;padding-top:20px">
-					<%= image_tag("WG.png", alt: "Wolfgang Gartner") %>
-				</div>
-				<div class="span6 columns">
-					<h3 style="padding-top:120px;padding-bottom:10px">
-						<%= link_to	"Artists Who Take Their Stage With Them", '/news/artists-that-take-their-stage-with-them', id:"cus_title2" %>
-					</h3>
-				</div>
-			</div>
-			<hr style="margin-left:50px;margin-right:50px">
-			<br><br>
-			<p class="smalltab">
-				The trend of artists having their own traveling light show is something that is becoming a very important part of many EDM concerts in the US. Of course, you can always expect the biggest and best lights at large festivals, like Ultra or Electric Daisy Carnival, but now that four-story LED/laser wall has been shrunk down to fit in an indoor venue. And <%= link_to	"the results are amazing", 'http://blogs.miaminewtimes.com/crossfade/2012/08/best_dj_booths_in_edm_skrillex_avicii_daft_punk.php'%>.
-			</p>
-			<p class="smalltab">
-				A few days ago I started up my new twitter account for the website (<%= link_to	"@BuildTheBeat", 'https://twitter.com/buildthebeat'%>) and got into a mini twitter conversation with one of my favorite artists, Wolfgang Gartner, aka Joey Youngman. Besides the immense amount of flattery I got from the fact that he actually responded to me, I got some information out of him as well.
-			</p>
-			<p class="smalltab">
-				<%= link_to	"Read More...", '/news/artists-that-take-their-stage-with-them' %>
-			</p>
-		</div>
-	</li>
-</ul>
-
-<ul class="thumbnails">
-	<li class="span10">
-		<div class="thumbnail cus_about">
-			<h4 style="float:right">Sept 24 2012</h4>
-			<h3 style="padding-left:40px;padding-top:20px;padding-bottom:20px"><%=link_to "Music: Gigamesh", music_path, id: "cus_title2"%></h3>
-			<p class="smalltab">New stuff from Gigamesh, one of the best french house music producers out there:</p>
-			<p class="tab">
-				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F60994951&show_artwork=true"></iframe></p>
-			</div>
-		</li>
-	</ul>
+<% @post=Post.find(4) %>
+<%= @post.content.html_safe %>
