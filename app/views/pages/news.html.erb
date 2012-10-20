@@ -1,6 +1,4 @@
 
-<% @post=Post.find(5) %>
-<%= @post.content.html_safe %>
+<%= find_post_by_name("A New Take On Old Tech") %>
 
-<% @post=Post.find(6) %>
-<%= @post.content.html_safe %>
+<%= find_post_by_name("Artists That Take Their Stage With Them") %>

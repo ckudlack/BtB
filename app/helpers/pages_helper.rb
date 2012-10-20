@@ -1,5 +1,12 @@
 module PagesHelper
-	def get_post()
-		@post = Post.find(1)
+
+	def find_post_by_name(name)
+		@posts = Post.all
+		@posts.each do |post| 
+			if name == post.title
+				return post.content.html_safe
+			end
+		end
 	end
+
 end
