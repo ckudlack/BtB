@@ -4,7 +4,11 @@ BtB::Application.routes.draw do
     resources :comments
   end
 
+  resources :users
+
   root :to => "pages#home"
+
+  match '/signup',  to: 'users#new'
 
   match '/music', to: 'pages#music'
   

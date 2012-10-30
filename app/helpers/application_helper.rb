@@ -9,4 +9,12 @@ module ApplicationHelper
       end
   end
   
+
+  def admin?
+  	@user = User.find(1)
+  	false
+  end
+
+  
+
 end

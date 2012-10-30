@@ -19,5 +19,7 @@
 
 <%= render 'comments/form' %>
 
+<% if admin? %>
 <%= link_to 'Edit Post', edit_post_path(@post) %> |
 <%= link_to 'Back to Posts', posts_path %>
+<% end %>
