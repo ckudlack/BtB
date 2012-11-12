@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	# before_filter :authorize, except: [:show]
 	# GET /posts/new
   # GET /posts/new.json
 	def new
