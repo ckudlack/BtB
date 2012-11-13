@@ -15,9 +15,6 @@ BtB::Application.configure do
     }
   }
 
-# Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
-
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 
