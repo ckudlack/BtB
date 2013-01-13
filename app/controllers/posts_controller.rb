@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :authorize, except: [:show]
+  before_filter :authorize, except: [:show] if Rails.env.production?
   # GET /posts
   # GET /posts.json
   def index

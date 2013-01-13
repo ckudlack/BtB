@@ -1,5 +1,5 @@
 class SnippetsController < ApplicationController
-	before_filter :authorize, except: [:show]
+	before_filter :authorize, except: [:show] if Rails.env.production?
 	def create
 		@post = Post.find(params[:post_id])
 		@snippet = @post.snippets.create(params[:snippet])
