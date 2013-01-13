@@ -1,0 +1,13 @@
+<%= form.fields_for :snippets do |snip_form| %>
+  <div class="field">
+    <%= snip_form.label 'Snippet:' %>
+    <%= snip_form.text_area :content %>
+  </div>
+
+  <% unless snip_form.object.nil? || snip_form.object.new_record? %>
+    <div class="field">
+      <%= snip_form.label :_destroy, 'Remove:' %>
+      <%= snip_form.check_box :_destroy %>
+    </div>
+  <% end %>
+<% end %>
