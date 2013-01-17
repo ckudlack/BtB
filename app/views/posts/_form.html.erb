@@ -1,4 +1,5 @@
 <% @post.tags.build %>
+<% @post.build_snippet %>
 <%= form_for(@post) do |post_form| %>
 <% if @post.errors.any? %>
 <div id="error_explanation">

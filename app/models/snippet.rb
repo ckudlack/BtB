@@ -1,3 +1,4 @@
 class Snippet < ActiveRecord::Base
-  attr_accessible :content, :title
+  belongs_to :post
+  attr_accessible :body
 end

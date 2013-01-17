@@ -1,13 +1,12 @@
-<%= form.fields_for :snippet do |snip_form| %>
+<%= form.fields_for :snippet do |s_form| %>
   <div class="field">
-    <%= snip_form.label 'Snippet:' %>
-    <%= snip_form.text_area :content %>
+    <%= s_form.label :body, 'Snippet:' %>
+    <%= s_form.text_area :body %>
   </div>
-
-  <% unless snip_form.object.nil? || snip_form.object.new_record? %>
+  <% unless s_form.object.nil? || s_form.object.new_record? %>
     <div class="field">
-      <%= snip_form.label :_destroy, 'Remove:' %>
-      <%= snip_form.check_box :_destroy %>
+      <%= s_form.label :_destroy, 'Remove:' %>
+      <%= s_form.check_box :_destroy %>
     </div>
   <% end %>
 <% end %>
